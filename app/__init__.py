@@ -1,6 +1,7 @@
 import os
-from flask import Flask, render_template, send_from_directory
+
 from dotenv import load_dotenv
+from flask import Flask, render_template
 
 load_dotenv()
 app = Flask(__name__)
@@ -32,3 +33,7 @@ def project():
 
     return render_template('project.html', projects=projects, url=os.getenv("URL"))
 
+
+@app.route('/profile')
+def get_profile():
+    return render_template('profile.html', title='Profile', url=os.getenv("URL") + "/profile")
