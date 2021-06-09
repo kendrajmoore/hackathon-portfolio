@@ -22,6 +22,8 @@ pip install -r requirements.txt
 
 ## Usage
 
+test test test
+
 
 Create a .env file using the example.env template
 
