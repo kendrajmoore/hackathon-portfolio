@@ -1,7 +1,7 @@
 import os
 
 from dotenv import load_dotenv
-from flask import Flask, render_template
+from flask import Flask, render_template, json, current_app as app
 
 load_dotenv()
 app = Flask(__name__)
@@ -13,24 +13,13 @@ def index():
 
 
 @app.route('/project')
-def project():
-    projects = [
-        {
-            'name': 'projectone',
-            'description': 'Beautiful day in Portland!',
-            'tools': 'React',
-            'link': 'www.google.com',
-            'source': 'www.github.com'
-        },
-        {
-            'name': 'projecttwo',
-            'description': 'Beautiful day in Georgia!',
-            'tools': 'Python',
-            'link': 'www.github.com',
-            'source': 'www.google.com'
-        }
-    ]
-
+def get_project():
+    project_file = os.path.join(app.static_folder, 'data', 'project.json')
+    projects = []
+    with open(project_file) as p:
+        data = json.load(p)
+        for i in data['projects']:
+            projects.append(i)
     return render_template('project.html', projects=projects, url=os.getenv("URL"))
 
 
