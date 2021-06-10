@@ -1,6 +1,10 @@
-# Flask-Blog
+# Portfolio design for MLH Fellowship Production Engineering track
 
-Minimal Flask template to get started on your blog application for MLH Fellowship Production Engineering track.
+Designed a portfolio website
+
+# Technologies Used
+
+Python-Flask, HTML, and CSS
  
 
 ## Installation
@@ -21,9 +25,6 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-
-test test test
-
 
 Create a .env file using the example.env template
 
