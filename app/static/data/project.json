@@ -1,7 +1,7 @@
 {
-     "projects" : [
+     "lists" : [
         {
-            "name": "projectone",
+            "name": "projectcandy",
             "description": "Beautiful day in Portland!",
             "tools": ["React", "python", "math"],
             "link": "www.google.com",

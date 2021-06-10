@@ -1,5 +1,5 @@
 {
-    "profiles" : [
+    "lists" : [
        {
            "name": "me",
            "image": "./static/img/logo.jpg",

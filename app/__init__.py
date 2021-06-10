@@ -2,9 +2,11 @@ import os
 
 from dotenv import load_dotenv
 from flask import Flask, render_template, json, current_app as app
-
+from helper import read_file
 load_dotenv()
 app = Flask(__name__)
+
+
 
 
 @app.route('/')
@@ -22,23 +24,14 @@ def index():
 @app.route('/project')
 def get_project():
     project_file = os.path.join(app.static_folder, 'data', 'project.json')
-    projects = []
-    with open(project_file) as p:
-        data = json.load(p)
-        for i in data['projects']:
-            projects.append(i)
+    projects = read_file(project_file)  
     return render_template('project.html', projects=projects, url=os.getenv("URL"))
 
 
 @app.route('/profile')
 def get_profile():
     profile_file = os.path.join(app.static_folder, 'data', 'profile.json')
-    profiles = []
-    with open(profile_file) as p:
-        data = json.load(p)
-        for i in data['profiles']:
-            profiles.append(i)
-            print(profiles)
+    profiles = read_file(profile_file)
     return render_template('profile.html', profiles=profiles, title='Profile', url=os.getenv("URL"))
 
   
