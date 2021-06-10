@@ -38,8 +38,9 @@ def project():
 def get_profile():
     return render_template('profile.html', title='Profile', url=os.getenv("URL") + "/profile")
 
-source_url = 'https://lz12v4f1p8c1cumxnbiqvm10-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/stg-404-page-funny.png.webp'
+
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('404.html', url=source_url), 404
+    source_img="./static/img/404.png"
+    return render_template('404.html', url=source_img), 404
