@@ -4,7 +4,9 @@ Designed a portfolio website for MLH Fellowship Production Engineering track
 
 ## Technologies Used
 
-Python-Flask, HTML, and CSS
+- Python-Flask
+- HTML
+- CSS
  
 
 ## Installation
