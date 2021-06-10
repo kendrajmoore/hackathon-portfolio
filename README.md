@@ -1,6 +1,6 @@
 # Team KENARGI Portfolio design 
 
-Designed a portfolio website for MLH Fellowship Production Engineering track
+Design and maintain a portfolio website for our time @MLH Fellowship Production Engineering track
 
 ## Technologies Used
 
