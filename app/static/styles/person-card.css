@@ -1,0 +1,15 @@
+.person-card {
+    width: 19em;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.person-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.person-card img {
+    width: 19em;
+    height: auto;
+}

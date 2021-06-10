@@ -9,8 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', title="TEAM: KENARGI", url=os.getenv("URL"))
-
+    return render_template('index.html', title="Team Kenargi's portfolio", url=os.getenv("URL"))
 
 @app.route('/project')
 def project():
@@ -37,3 +36,10 @@ def project():
 @app.route('/profile')
 def get_profile():
     return render_template('profile.html', title='Profile', url=os.getenv("URL") + "/profile")
+
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    source_img="./static/img/404.png"
+    return render_template('404.html', img=source_img), 404
