@@ -48,3 +48,4 @@ def get_profile():
 def page_not_found(e):
     source_img="./static/img/404.png"
     return render_template('404.html', img=source_img), 404
+    
