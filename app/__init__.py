@@ -1,7 +1,7 @@
 import os
 
 from dotenv import load_dotenv
-from flask import Flask, render_template
+from flask import Flask, render_template, json, current_app as app
 
 load_dotenv()
 app = Flask(__name__)
@@ -20,31 +20,28 @@ def index():
 
 
 @app.route('/project')
-def project():
-    projects = [
-        {
-            'name': 'projectone',
-            'description': 'Beautiful day in Portland!',
-            'tools': 'React',
-            'link': 'www.google.com',
-            'source': 'www.github.com'
-        },
-        {
-            'name': 'projecttwo',
-            'description': 'Beautiful day in Georgia!',
-            'tools': 'Python',
-            'link': 'www.github.com',
-            'source': 'www.google.com'
-        }
-    ]
-
+def get_project():
+    project_file = os.path.join(app.static_folder, 'data', 'project.json')
+    projects = []
+    with open(project_file) as p:
+        data = json.load(p)
+        for i in data['projects']:
+            projects.append(i)
     return render_template('project.html', projects=projects, url=os.getenv("URL"))
 
 
 @app.route('/profile')
 def get_profile():
-    return render_template('profile.html', title='Profile', url=os.getenv("URL"))
+    profile_file = os.path.join(app.static_folder, 'data', 'profile.json')
+    profiles = []
+    with open(profile_file) as p:
+        data = json.load(p)
+        for i in data['profiles']:
+            profiles.append(i)
+            print(profiles)
+    return render_template('profile.html', profiles=profiles, title='Profile', url=os.getenv("URL"))
 
+  
 @app.errorhandler(404)
 def page_not_found(e):
     source_img="./static/img/404.png"

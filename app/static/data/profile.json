@@ -1,0 +1,31 @@
+{
+    "profiles" : [
+       {
+           "name": "me",
+           "image": "./static/img/logo.jpg",
+           "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, consequuntur cum deleniti",
+           "tools": ["React", "python", "math"],
+           "hobbies": ["Programming", "running", "painting"],
+           "github": "www.github.com",
+           "linkedin": "www.linkedin.com"
+       },
+       {
+        "name": "me",
+        "image": "./static/img/logo.jpg",
+        "aboutMe": "Beautiful day in Portland!",
+        "tools": ["React", "python", "math"],
+        "hobbies": ["movies", "dancing", "farming"],
+        "github": "www.github.com",
+        "linkedin": "www.linkedin.com"
+    },
+    {
+        "name": "me",
+        "image": "./static/img/logo.jpg",
+        "aboutMe": "Beautiful day in Portland!",
+        "tools": ["React", "python", "math"],
+        "hobbies": ["movies", "dancing", "farming"],
+        "github": "www.github.com",
+        "linkedin": "www.linkedin.com"
+    }
+   ]
+}
