@@ -1,6 +1,10 @@
+<p align="center">
+ <img width="460" src="https://user-images.githubusercontent.com/51943194/121562739-98dd0680-c9ce-11eb-897a-579780e50c9a.jpg">
+</p>
+
 # Team KENARGI Portfolio design 
 
-Designed a portfolio website for MLH Fellowship Production Engineering track
+Design and maintain a portfolio website for our time @MLH Fellowship Production Engineering track
 
 ## Technologies Used
 
@@ -36,4 +40,7 @@ Start flask development server
 $ export FLASK_ENV=development
 $ flask run
 ```
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+Please make sure to update tests as appropriate.
