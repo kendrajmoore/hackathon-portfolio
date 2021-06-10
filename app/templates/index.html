@@ -24,69 +24,54 @@
             box-sizing: border-box;
         }
 
-        .row {
-            display: flex;
-            padding: 10px;
-        }
-
-        /* Create three equal columns that sits next to each other */
-        .column {
-            flex: 33.33%;
-            padding: 20px;
-        }
     </style>
 </head>
 
 <body>
     <header class="nav-bar">
         <div class="nav-content">
-            <a href="/">
                 <div class="nav-logo">
                     <img src="./static/img/logo.svg"/>
                 </div>
-            </a>
         </div>
     </header>
 
     <div class="profile">
         <div id="profile-picture" class="profile-picture">
-            <img src="./static/img/friends.jpg">
+            <img src="./static/img/panturthawk.jpg">
         </div>
         <h1>{{ title }}</h1>
     </div>
 
     <section>
-        <h1>Introducing the team members:</h1>
+        <h1><center>Introducing the team members:</center></h1>
 
         <div class="grid-container members-container">
             <figure>
-                <a href="">
-                    <img src="./static/img/friends.jpg" alt="Kenargi Member" width="150" height="150">
-                </a>
-                <figcaption>Armando</figcaption>
+                <a href="/profile">
+                    <center><img src= {{ img_1 }} alt="Kenargi Member" width="150" height="150"></center>
+                <figcaption><center>Armando</center></figcaption></a>
             </figure>
             <figure>
-                <a href="">
-                    <img src="./static/img/Gigi_Hui.png" alt="Kenargi Member" width="150" height="150">
-                </a>
-                <figcaption>Gigi</figcaption>
+                <a href="/profile">
+                    <center><img src={{ img_2 }} alt="Kenargi Member" width="150" height="150"></center>
+                <figcaption><center>Gigi</center></figcaption></a>
             </figure>
             <figure>
-                <a href="">
-                    <img src="./static/img/friends.jpg" alt="Kenargi Member" width="150" height="150">
-                </a>
-                <figcaption>Kendra</figcaption>
+                <a href="/profile">
+                    <center><img src={{ img_3 }} alt="Kenargi Member" width="150" height="150"></center>         
+                <figcaption><center>Kendra</center></figcaption> </a>
             </figure>
         </div>
     </section>
 
 
     <section>
-        <h1>Projects: </h1>
+        <h1><center>Projects: </center></h1>
 
         <div class="grid-container projects-container">
             <figure>
-                <a href="">
+                <a href="/project">
                     <img src="./static/img/project1.png" alt="Kenargi Project" width="150" height="150">
                 </a>
                 <figcaption>Portfolio</figcaption>
@@ -95,6 +80,15 @@
 
     </section>
 
+    <footer>
+        <div>
+            <h4>Source code</h4>
+            <a href="https://github.com/kendrajmoore/literate-tribble">Github</a>
+        </div>
 
+        <div>
+            <h4>Made with <3 by Team Kenargi</h4>
+        </div>
+    </footer>
 </body>
 </html>
