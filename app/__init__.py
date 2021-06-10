@@ -25,7 +25,14 @@ def get_project():
 
 @app.route('/profile')
 def get_profile():
-    return render_template('profile.html', title='Profile', url=os.getenv("URL") + "/profile")
+    profile_file = os.path.join(app.static_folder, 'data', 'profile.json')
+    profiles = []
+    with open(profile_file) as p:
+        data = json.load(p)
+        for i in data['profiles']:
+            profiles.append(i)
+            print(profiles)
+    return render_template('profile.html', profiles=profiles, title='Profile', url=os.getenv("URL"))
 
 
 @app.errorhandler(404)

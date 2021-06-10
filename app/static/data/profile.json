@@ -1,18 +1,31 @@
 {
-    "projects" : [
+    "profiles" : [
        {
-           "name": "projectone",
-           "description": "Beautiful day in Portland!",
+           "name": "me",
+           "image": "./static/img/logo.jpg",
+           "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, consequuntur cum deleniti",
            "tools": ["React", "python", "math"],
-           "link": "www.google.com",
-           "source": "www.github.com"
+           "hobbies": ["Programming", "running", "painting"],
+           "github": "www.github.com",
+           "linkedin": "www.linkedin.com"
        },
        {
-           "name": "projecttwo",
-           "description": "Beautiful day in Georgia!",
-           "tools": ["C++", "R", "OCaml"],
-           "link": "www.github.com",
-           "source": "www.google.com"
-       }
+        "name": "me",
+        "image": "./static/img/logo.jpg",
+        "aboutMe": "Beautiful day in Portland!",
+        "tools": ["React", "python", "math"],
+        "hobbies": ["movies", "dancing", "farming"],
+        "github": "www.github.com",
+        "linkedin": "www.linkedin.com"
+    },
+    {
+        "name": "me",
+        "image": "./static/img/logo.jpg",
+        "aboutMe": "Beautiful day in Portland!",
+        "tools": ["React", "python", "math"],
+        "hobbies": ["movies", "dancing", "farming"],
+        "github": "www.github.com",
+        "linkedin": "www.linkedin.com"
+    }
    ]
 }
