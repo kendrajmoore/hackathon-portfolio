@@ -1,3 +1,6 @@
+![panturthawk](https://user-images.githubusercontent.com/51943194/121562739-98dd0680-c9ce-11eb-897a-579780e50c9a.jpg)
+
+
 # Team KENARGI Portfolio design 
 
 Design and maintain a portfolio website for our time @MLH Fellowship Production Engineering track
