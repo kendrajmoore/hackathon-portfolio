@@ -1,6 +1,6 @@
-# Portfolio design for MLH Fellowship Production Engineering track
+# Portfolio design 
 
-Designed a portfolio website
+Designed a portfolio website for MLH Fellowship Production Engineering track
 
 ## Technologies Used
 
