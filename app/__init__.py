@@ -36,3 +36,10 @@ def project():
 @app.route('/profile')
 def get_profile():
     return render_template('profile.html', title='Profile', url=os.getenv("URL") + "/profile")
+
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    source_img="./static/img/404.png"
+    return render_template('404.html', img=source_img), 404
