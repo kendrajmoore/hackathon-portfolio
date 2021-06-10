@@ -2,7 +2,7 @@
 
 Designed a portfolio website
 
-# Technologies Used
+## Technologies Used
 
 Python-Flask, HTML, and CSS
  
