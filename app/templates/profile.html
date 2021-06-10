@@ -1,12 +1,14 @@
+
 {% include 'header.html' %}
+
 
     <main>
         {% for profile in profiles %}
         <section class="profile">
             <div id="profile-picture" class="profile-picture">
                 <img src="{{ profile.image }}">
+                <h1>{{ title }}</h1>
             </div>
-            <h1>{{ title }}</h1>
         </section>
 
         <div class="container">
@@ -41,4 +43,6 @@
         {% endfor %}
     </main>
 
+
 {% include 'footer.html' %}
+
