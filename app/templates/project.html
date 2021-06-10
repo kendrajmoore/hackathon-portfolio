@@ -1,15 +1,13 @@
 {% include 'header.html' %}
-    <body>
-        <h1>Projects</h1>
-        <p>project</p>
-        {% for project in projects %}
-        <div>
-            <h2>{{ project.name }}</h2>
-            <p>{{ project.description }}</p>
-            <p>{{ project.tools }}</p>
-            <p> {{ project.link }}</p>
-            <p> {{ project.source }} </p>
-        </div>
-        {% endfor %}
-    </body>
+<h1>Projects</h1>
+<p>project</p>
+{% for project in projects %}
+    <div>
+        <h2>{{ project.name }}</h2>
+        <p>{{ project.description }}</p>
+        <p>{{ project.tools }}</p>
+        <p> {{ project.link }}</p>
+        <p> {{ project.source }} </p>
+    </div>
+{% endfor %}
 {% include 'footer.html' %}
