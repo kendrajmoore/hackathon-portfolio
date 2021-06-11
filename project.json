@@ -1,22 +1,23 @@
 {
     "lists" : [
        {
-         "name": "projectcandy",
+         "name": "Portfolio Project",
          "id": 1,
-         "image": "/static/img/logo.jpg",
-         "description": "Beautiful day in Portland!",
+         "image": "/static/img/project1.png",
+         "description": "Our first team project.",
          "tools": [
-           "React",
-           "python",
-           "math"
+           "Python",
+           "Flask",
+           "HTML",
+           "CSS"
          ],
          "link": "www.google.com",
-         "source": "www.github.com"
+         "source": "https://github.com/kendrajmoore/hackathon-portfolio"
        },
        {
-           "name": "projecttwo",
+           "name": "Sample Project",
            "id": 2,
-           "image": "./static/img/logo.jpg",
+           "image": "/static/img/logo.jpg",
            "description": "Beautiful day in Georgia!",
            "tools": ["C++", "R", "OCaml"],
            "link": "www.github.com",
@@ -25,7 +26,7 @@
        {
            "name": "MagicCardApp",
            "id": 3,
-           "image": "./static/img/magic.png",
+           "image": "/static/img/magic.png",
            "description": "An app to display magic cards",
            "tools": ["Rails", "Magic Card Api", "Bootstrap"],
            "source": "https://github.com/kendrajmoore/magic_cards_app",
