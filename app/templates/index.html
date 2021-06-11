@@ -20,7 +20,7 @@
     <h2>Introducing the team members</h2>
 
     <div class="grid-container members-container">
-        {% for profile in profiles %}
+        {% for profile in profiles.values() %}
             <figure class="card person-card">
                 <img src="{{ profile.image }}" alt="Kenargi Member" class="card-img-top">
                 <figcaption class="card-body">
@@ -39,7 +39,7 @@
     <h2>Projects</h2>
 
     <div class="grid-container projects-container">
-        {% for project in projects %}
+        {% for project in projects.values() %}
             <figure class="card person-card">
                 <img src="{{ project.image }}" alt="Kenargi Project" class="card-img-top">
                 <figcaption class="card-body">

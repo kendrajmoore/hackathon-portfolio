@@ -1,20 +1,20 @@
 {
-    "lists" : [
-       {
-         "name": "Portfolio Project",
-         "id": 1,
-         "image": "/static/img/project1.png",
-         "description": "Our first team project.",
-         "tools": [
-           "Python",
-           "Flask",
-           "HTML",
-           "CSS"
-         ],
-         "link": "www.google.com",
-         "source": "https://github.com/kendrajmoore/hackathon-portfolio"
-       }
-   ]
+  "items": [
+    {
+      "name": "Portfolio Project",
+      "id": 1,
+      "image": "/static/img/project1.png",
+      "description": "Our first team project.",
+      "tools": [
+        "Python",
+        "Flask",
+        "HTML",
+        "CSS"
+      ],
+      "link": "www.google.com",
+      "source": "https://github.com/kendrajmoore/hackathon-portfolio"
+    }
+  ]
 }
 
 

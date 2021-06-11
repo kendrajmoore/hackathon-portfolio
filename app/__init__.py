@@ -1,38 +1,41 @@
 import os
 
 from dotenv import load_dotenv
-from flask import Flask, render_template
+from flask import Flask, render_template, abort
 
-from helper import proj_data, proj_json, prof_json, prof_data
+from helper import load_projects, load_profiles
 
 load_dotenv()
 app = Flask(__name__)
 
-url = os.getenv("URL")
-projects_base_url = url + "/projects/"
-profiles_base_url = url + "/profiles/"
+base_url = os.getenv("URL")
+projects_base_url = base_url + "/projects/"
+profiles_base_url = base_url + "/profiles/"
 
-projects = proj_json()
-profiles = prof_json()
+projects = load_projects()
+profiles = load_profiles()
 
 
 @app.route('/')
 def index():
     return render_template('index.html', profiles=profiles, projects=projects, title="Team Kenargi's portfolio",
-                           url=url)
+                           url=base_url)
 
 
 @app.route('/projects/<name>')
 def get_project(name):
-    item = proj_data(name)
-    return render_template('project.html', item=item, title=name, url=projects_base_url + name)
+    if name not in projects:
+        return abort(404)
+    print(projects[name])
+    return render_template('project.html', item=projects[name], title=name, url=projects_base_url + name)
 
 
 @app.route('/profiles/<name>')
 def get_profile(name):
-    item = prof_data(name)
+    if name not in profiles:
+        return abort(404)
     title = name + "'s Profile"
-    return render_template('profile.html', item=item, title=title, url=profiles_base_url + name)
+    return render_template('profile.html', item=profiles[name], title=title, url=profiles_base_url + name)
 
 
 @app.errorhandler(404)
