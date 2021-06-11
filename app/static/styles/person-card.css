@@ -10,6 +10,7 @@
 }
 
 .person-card img {
-    width: 19em;
-    height: auto;
+    width: 20em;
+    height: 23em;
+    object-fit: cover;
 }
