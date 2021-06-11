@@ -2,8 +2,8 @@
 
 <main>
     <div class="profile">
-        <div id="profile-picture" class="profile-picture">
-            <img src="{{ item.image }}" alt="{{ item.name }}">
+        <div class="profile-picture">
+            <img class="rounded-circle" src="{{ item.image }}" alt="{{ item.name }}">
         </div>
         <h1>{{ item.name }}</h1>
     </div>
@@ -39,8 +39,10 @@
                 <a href="{{ item.linkedin }}"><i class="bi bi-linkedin"></i></a>
             </div>
         </section>
-        <a class="btn btn-outline-primary" href="/" role="button"><i class="bi bi-arrow-return-left"></i>&nbsp;&nbsp;Return
-            to home</a>
+        <div class="button-container">
+            <a class="btn btn-outline-primary" href="/" role="button"><i class="bi bi-arrow-return-left"></i>&nbsp;&nbsp;Return
+                to home</a>
+        </div>
     </div>
 </main>
 
