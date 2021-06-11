@@ -162,31 +162,3 @@ h3 i {
     font-size: 2rem;
     margin-left: 0.5rem;
 }
-
-/** Navigation Bar Buttons **/
-.ul-button {
-    list-style-type: none;
-    margin: 1px;
-    padding: 1px;
-    overflow: hidden;
-    border: 2x solid #0b0bd4;
-    background-color: #ffffff;
-    position: fixed;
-    width: 100%;
-    top: 3%;
-}
-
-.li-button {
-    float: left;
-}
-
-.li-a {
-    display: block;
-    padding: 8px;
-    background-color: #ffffff;
-}
-
-/* Links will change color when hovered over */
-li a:hover {
-    background-color: #f0b209ea;
-   }
