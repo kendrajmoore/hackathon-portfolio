@@ -2,7 +2,7 @@ import os
 
 from dotenv import load_dotenv
 from flask import Flask, render_template, json, current_app as app
-from helper import read_file
+from helper import proj_data, proj_json, read_file, prof_json, prof_data
 load_dotenv()
 app = Flask(__name__)
 
@@ -16,27 +16,26 @@ def index():
     img_1 = './static/img/friends.jpg'
     img_2 = "./static/img/Gigi_Hui.png"
     img_3 = "./static/img/friends.jpg"
-    project_file = os.path.join(app.static_folder, 'data', 'project.json')
-    projects = read_file(project_file) 
-    profile_file = os.path.join(app.static_folder, 'data', 'profile.json')
-    profiles = read_file(profile_file)
+    img_1 = './static/img/friends.jpg'
+    img_2 = "./static/img/Gigi_Hui.png"
+    img_3 = "./static/img/friends.jpg"
+    projects = proj_json()
+    profiles = prof_json()
     return render_template('index.html', profiles=profiles, projects=projects, title="Team Kenargi's portfolio", url=os.getenv("URL"),
     img_1=img_1, img_2=img_2, img_3=img_3)
 
 
 
-@app.route('/project')
-def get_project():
-    project_file = os.path.join(app.static_folder, 'data', 'project.json')
-    projects = read_file(project_file)  
-    return render_template('project.html', projects=projects, url=os.getenv("URL"))
+@app.route('/project/<name>')
+def get_project(name):
+    item = proj_data(name)
+    return render_template('project.html',  item=item, url=os.getenv("URL"))
 
 
-@app.route('/profile')
-def get_profile():
-    profile_file = os.path.join(app.static_folder, 'data', 'profile.json')
-    profiles = read_file(profile_file)
-    return render_template('profile.html', profiles=profiles, title='Profile', url=os.getenv("URL"))
+@app.route('/profile/<name>')
+def get_profile(name):
+    item = prof_data(name)
+    return render_template('profile.html', item=item, title='Profile', url=os.getenv("URL"))
 
   
 @app.errorhandler(404)

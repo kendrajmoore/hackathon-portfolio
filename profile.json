@@ -1,7 +1,7 @@
 {
   "lists": [
     {
-      "name": "Armando Ugalde",
+      "name": "Armando",
       "id": 1,
       "location": "Mexico city",
       "image": "./static/img/armando.jpg",
@@ -44,23 +44,23 @@
       "linkedin": "www.linkedin.com"
     },
     {
-      "name": "me",
+      "name": "Kendra",
       "id": 3,
-      "location": "somewhere",
-      "image": "./static/img/logo.jpg",
-      "aboutMe": "Beautiful day in Portland!",
+      "location": "Statesboro, GA",
+      "image": "./static/img/kendra.png",
+      "aboutMe": "I am a graduate student that studies information systems",
       "tools": [
-        "React",
-        "python",
-        "math"
+        "Javascript",
+        "R",
+        "Math"
       ],
       "hobbies": [
-        "movies",
-        "dancing",
-        "farming"
+        "Cycling",
+        "Watching movies",
+        "Painting"
       ],
-      "github": "www.github.com",
-      "linkedin": "www.linkedin.com"
+      "github": "https://github.com/kendrajmoore",
+      "linkedin": "https://linkedin.com/in/kendrajmoore"
     }
   ]
 }

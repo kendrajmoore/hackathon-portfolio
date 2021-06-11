@@ -7,26 +7,17 @@
     <h1>Team Kenargi</h1>
 </div>
 
-<section class="container home-section">
-    <h2>About Team Kenargi</h2>
-        <p>
-    Welcome to team Kenargi's portfolio. We are in MLH Fellowship Production Engineering program pod 3.3.5.
-    Our team name "Kenargi" is a made-up word derived from the letters of our first name. Our mascot is a
-    panda-turtle-hawk to represent 3 heads is better than one especially when working on production projects! 
-        </p>
-</section>
 
 <section class="container home-section">
     <h2>Introducing the team members</h2>
 
     <div class="grid-container members-container">
         {% for profile in profiles %}
-
         <div class="grid-container members-container">
             <figure class="card person-card">
                 <img src="{{ profile.image }}" alt="Kenargi Member" class="card-img-top">
                 <figcaption class="card-body">
-                    <a href="/profile" class="stretched-link">
+                    <a href="/profile/{{ profile.name }}" class="stretched-link">
                         <h5 class="card-title">{{ profile.name }}</h5>
                     </a>
                     <p class="card-text">{{ profile.location }} </p>
@@ -45,7 +36,7 @@
         <figure class="card person-card">
             <img src="{{ project.image }}" alt="Kenargi Project" class="card-img-top">
             <figcaption class="card-body">
-                <a href="{{ project.link }}" class="stretched-link">
+                <a href="/project/{{project.name}}" class="stretched-link">
                     <h5 class="card-title">{{ project.name }}</h5>
                 </a>
                 <p class="card-text">{{ project.description }}</p>
@@ -53,7 +44,6 @@
         </figure>
         {% endfor %}
     </div>
-
     </section>
 
 
