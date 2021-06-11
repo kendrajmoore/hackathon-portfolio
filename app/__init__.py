@@ -9,12 +9,12 @@ load_dotenv()
 app = Flask(__name__)
 
 url = os.getenv("URL")
+projects = proj_json()
+profiles = prof_json()
 
 
 @app.route('/')
 def index():
-    projects = proj_json()
-    profiles = prof_json()
     return render_template('index.html', profiles=profiles, projects=projects, title="Team Kenargi's portfolio",
                            url=url)
 
