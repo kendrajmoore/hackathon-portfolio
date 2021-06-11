@@ -8,8 +8,8 @@ Design and maintain a portfolio website for our time @MLH Fellowship Production 
 
 ## Project Overview
 
-This project is to create a portfolio that is personalized to us using basic Flask, Python, HTML and CSS. By creating a portfolio
-we can store the numberous projects we will be working on in the next 12-weeks and help us keep track of what we had accomplished. 
+Create a portfolio that is personalized to us. By creating a portfolio we can store the numberous projects we will be working on 
+in the next 12-weeks and help us keep track of what we had accomplished. 
 
 ## Technologies Used
 
