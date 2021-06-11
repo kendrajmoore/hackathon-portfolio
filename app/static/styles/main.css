@@ -187,7 +187,7 @@ h3 i {
     }
 
     ul {
-        max-width: 38%;
+        max-width: 50%;
         margin: 0 auto;
     }
 
@@ -202,5 +202,14 @@ h3 i {
     .button-container {
         display: flex;
         justify-content: center;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    .github-link-container {
+        margin-bottom: 1.3em;
     }
 }
