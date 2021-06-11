@@ -11,12 +11,12 @@
 
         <div class="container profile-info">
             <section>
-                <h3>About me</h3>
+                <h3><i class="bi bi-file-person-fill"></i>About me</h3>
                 <p>{{ profile.aboutMe }}</p>
             </section>
             <hr>
             <section>
-                <h3>Tools and technologies</h3>
+                <h3><i class="bi bi-gear-fill"></i>Tools and technologies </h3>
                 <ul>
                     {% for tool in profile.tools %}
                         <li> {{ tool }}</li>
@@ -25,7 +25,7 @@
             </section>
             <hr>
             <section>
-                <h3>Hobbies</h3>
+                <h3><i class="bi bi-emoji-smile-fill"></i>Hobbies</h3>
                 <ul>
                     {% for hobby in profile.hobbies %}
                         <li> {{ hobby }}</li>
@@ -35,14 +35,14 @@
             <hr>
             <section>
                 <h3>Connect with me!</h3>
-                <ul>
-                    <li>{{ profile.github }}</li>
-                    <li>{{ profile.linkedin}}</li>
-                </ul>
+                <div class="icons-container">
+                    <a href="{{ profile.github }}"><i class="bi bi-github "></i></a>
+                    <a href="{{ profile.linkedin }}"><i class="bi bi-linkedin"></i></a>
+                </div>
             </section>
         </div>
-        {% endfor %}
-    </main>
+    {% endfor %}
+</main>
 
 
 {% include 'footer.html' %}
