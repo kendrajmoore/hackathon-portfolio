@@ -9,6 +9,9 @@ load_dotenv()
 app = Flask(__name__)
 
 url = os.getenv("URL")
+projects_base_url = url + "/projects/"
+profiles_base_url = url + "/profiles/"
+
 projects = proj_json()
 profiles = prof_json()
 
@@ -22,14 +25,14 @@ def index():
 @app.route('/projects/<name>')
 def get_project(name):
     item = proj_data(name)
-    return render_template('project.html', item=item, title=name, url=url + "/projects/" + name)
+    return render_template('project.html', item=item, title=name, url=projects_base_url + name)
 
 
 @app.route('/profiles/<name>')
 def get_profile(name):
     item = prof_data(name)
     title = name + "'s Profile"
-    return render_template('profile.html', item=item, title=title, url=url + "/profiles/" + name)
+    return render_template('profile.html', item=item, title=title, url=profiles_base_url + name)
 
 
 @app.errorhandler(404)
