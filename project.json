@@ -1,13 +1,17 @@
 {
     "lists" : [
        {
-           "name": "projectcandy",
-           "id": 1,
-           "image": "./static/img/logo.jpg",
-           "description": "Beautiful day in Portland!",
-           "tools": ["React", "python", "math"],
-           "link": "www.google.com",
-           "source": "www.github.com"
+         "name": "projectcandy",
+         "id": 1,
+         "image": "/static/img/logo.jpg",
+         "description": "Beautiful day in Portland!",
+         "tools": [
+           "React",
+           "python",
+           "math"
+         ],
+         "link": "www.google.com",
+         "source": "www.github.com"
        },
        {
            "name": "projecttwo",
