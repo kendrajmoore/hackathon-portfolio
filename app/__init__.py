@@ -13,14 +13,10 @@ url = os.getenv("URL")
 
 @app.route('/')
 def index():
-    img_1 = './static/img/friends.jpg'
-    img_2 = "./static/img/Gigi_Hui.png"
-    img_3 = "./static/img/friends.jpg"
     projects = proj_json()
     profiles = prof_json()
     return render_template('index.html', profiles=profiles, projects=projects, title="Team Kenargi's portfolio",
-                           url=url,
-                           img_1=img_1, img_2=img_2, img_3=img_3)
+                           url=url)
 
 
 @app.route('/projects/<name>')
@@ -31,13 +27,12 @@ def get_project(name):
 
 @app.route('/profiles/<name>')
 def get_profile(name):
-    item = prof_data(name)  
+    item = prof_data(name)
     title = name + "'s Profile"
-    return render_template('profile.html', item=item, title=title, url=url )
+    return render_template('profile.html', item=item, title=title, url=url)
 
 
 @app.errorhandler(404)
 def page_not_found(e):
     source_img = "/static/img/404.png"
     return render_template('404.html', img=source_img, title="Page not found"), 404
-
