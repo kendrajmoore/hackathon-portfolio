@@ -28,8 +28,8 @@
            "image": "./static/img/magic.png",
            "description": "An app to display magic cards",
            "tools": ["Rails", "Magic Card Api", "Bootstrap"],
-           "link": "https://github.com/kendrajmoore/magic_cards_app",
-           "source": "https://magic-cards-kjm.herokuapp.com/"
+           "source": "https://github.com/kendrajmoore/magic_cards_app",
+           "link": "https://magic-cards-kjm.herokuapp.com/"
        }
    ]
 }
