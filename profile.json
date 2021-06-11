@@ -25,23 +25,24 @@
       "linkedin": "https://www.linkedin.com/in/armandouv/"
     },
     {
-      "name": "me",
+      "name": "Gigi",
       "id": 2,
-      "location": "Miami",
-      "image": "/static/img/logo.jpg",
-      "aboutMe": "Beautiful day in Portland!",
+      "location": "Los Angeles, CA",
+      "image": "/static/img/Gigi_Hui.png",
+      "aboutMe": "I'm a Computer Programming and Information Technology student. I believe that \"Learning is creation, not consumption. Knowledge is not something a learner absorbs but something a learner creates.\" -- George Couros",
       "tools": [
-        "React",
-        "python",
-        "math"
+        "Python",
+        "C++",
+        "Java"
       ],
       "hobbies": [
-        "movies",
-        "dancing",
-        "farming"
+        "Digital Art|Optical Illusions|3d realistic colored pencil art",
+        "Biking",
+        "Reading",
+        "Puzzles"
       ],
-      "github": "www.github.com",
-      "linkedin": "www.linkedin.com"
+      "github": "https://github.com/IceMints",
+      "linkedin": "https://www.linkedin.com/in/gigi-hui/"
     },
     {
       "name": "Kendra",
