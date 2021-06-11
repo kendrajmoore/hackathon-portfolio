@@ -26,7 +26,6 @@ def index():
 def get_project(name):
     if name not in projects:
         return abort(404)
-    print(projects[name])
     return render_template('project.html', item=projects[name], title=name, url=projects_base_url + name)
 
 
