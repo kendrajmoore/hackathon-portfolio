@@ -1,8 +1,8 @@
 {% include 'header.html' %}
 
 <div class="profile">
-    <div id="profile-picture" class="profile-picture">
-        <img src="/static/img/panturthawk.jpg" alt="Kenargi mascot">
+    <div class="profile-picture">
+        <img class="rounded-circle" src="/static/img/panturthawk.jpg" alt="Kenargi mascot">
     </div>
     <h1>Team Kenargi</h1>
 </div>
@@ -19,7 +19,7 @@
 <section class="container home-section">
     <h2>Introducing the team members</h2>
 
-    <div class="grid-container members-container">
+    <div class="grid-container">
         {% for profile in profiles.values() %}
             <figure class="card person-card">
                 <img src="{{ profile.image }}" alt="Kenargi Member" class="card-img-top">
@@ -38,7 +38,7 @@
 <section class="container home-section">
     <h2>Projects</h2>
 
-    <div class="grid-container projects-container">
+    <div class="grid-container">
         {% for project in projects.values() %}
             <figure class="card person-card">
                 <img src="{{ project.image }}" alt="Kenargi Project" class="card-img-top">
