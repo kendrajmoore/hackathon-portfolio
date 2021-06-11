@@ -2,7 +2,7 @@
 
 <div class="profile">
     <div id="profile-picture" class="profile-picture">
-        <img src="/static/img/panturthawk.jpg">
+        <img src="/static/img/panturthawk.jpg" alt="Kenargi mascot">
     </div>
     <h1>Team Kenargi</h1>
 </div>
@@ -21,7 +21,6 @@
 
     <div class="grid-container members-container">
         {% for profile in profiles %}
-            <div class="grid-container members-container">
             <figure class="card person-card">
                 <img src="{{ profile.image }}" alt="Kenargi Member" class="card-img-top">
                 <figcaption class="card-body">
@@ -32,7 +31,7 @@
                 </figcaption>
             </figure>
         {% endfor %}
-        </div>
+    </div>
 </section>
 
 
@@ -41,15 +40,15 @@
 
     <div class="grid-container projects-container">
         {% for project in projects %}
-        <figure class="card person-card">
-            <img src="{{ project.image }}" alt="Kenargi Project" class="card-img-top">
-            <figcaption class="card-body">
-                <a href="/projects/{{ project.name}}" class="stretched-link">
-                    <h5 class="card-title">{{ project.name }}</h5>
-                </a>
-                <p class="card-text">{{ project.description }}</p>
-            </figcaption>
-        </figure>
+            <figure class="card person-card">
+                <img src="{{ project.image }}" alt="Kenargi Project" class="card-img-top">
+                <figcaption class="card-body">
+                    <a href="/projects/{{ project.name }}" class="stretched-link">
+                        <h5 class="card-title">{{ project.name }}</h5>
+                    </a>
+                    <p class="card-text">{{ project.description }}</p>
+                </figcaption>
+            </figure>
         {% endfor %}
     </div>
 </section>
