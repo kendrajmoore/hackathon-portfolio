@@ -1,34 +1,24 @@
 import json
 
+
 def read_file(file):
-    lists = []
     with open(file) as p:
         data = json.load(p)
-        for i in data['lists']:
-            lists.append(i)
-    return lists
+        return data["items"]
 
 
-def proj_json():
-    project_file = './project.json'
-    projects = read_file(project_file)
-    return projects
+def load_items(filename):
+    items = read_file(filename)
+    items_dict = {}
+    for item in items:
+        name = item["name"]
+        items_dict[name] = item
+    return items_dict
 
-def proj_data(name):
-    projects = proj_json()
-    for project in projects:
-        if project['name'] == name:
-            item = project
-    return item
 
-def prof_json():
-    profile_file = './profile.json'
-    profiles = read_file(profile_file)
-    return profiles
+def load_projects() -> dict:
+    return load_items('./project.json')
 
-def prof_data(name):
-    profiles = prof_json()
-    for profile in profiles:
-        if profile['name'] == name:
-            item = profile
-    return item
+
+def load_profiles() -> dict:
+    return load_items('./profile.json')
