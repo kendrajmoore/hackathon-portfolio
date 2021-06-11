@@ -13,9 +13,6 @@ we can store the numberous projects we will be working on in the next 12-weeks a
 
 ## Technologies Used
 
-- Visual Studio Code
-- PyCharm
-- Virtual environment
 - Python-Flask
 - HTML
 - CSS
