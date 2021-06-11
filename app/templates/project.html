@@ -1,25 +1,24 @@
 {% include 'header.html' %}
 
 <main>
-    {% for project in projects %}
         <div class="profile">
             <div id="profile-picture" class="profile-picture">
-                <img src="{{ project.image }}" alt="{{ project.name }}">
+                <img src="{{ item.image }}" alt="{{ item.name }}">
             </div>
-            <h1>{{ project.name }}</h1>
+            <h1>{{ item.name }}</h1>
         </div>
 
 
         <div class="container profile-info">
             <section>
                 <h3><i class="bi bi-kanban-fill"></i>Description</h3>
-                <p>{{ project.description }}</p>
+                <p>{{ item.description }}</p>
             </section>
             <hr>
             <section>
                 <h3><i class="bi bi-gear-fill"></i>Tools and technologies</h3>
                 <ul>
-                    {% for tool in project.tools %}
+                    {% for tool in item.tools %}
                         <li> {{ tool }}</li>
                     {% endfor %}
                 </ul>
@@ -28,12 +27,11 @@
             <section>
                 <h3>Check it out!</h3>
                 <div class="icons-container">
-                    <a href="{{ project.source }}"><i class="bi bi-github "></i></a>
-                    <a href="{{ project.link }}"><i class="bi bi-globe"></i></a>
+                    <a href="{{ item.source }}"><i class="bi bi-github "></i></a>
+                    <a href="{{ item.link }}"><i class="bi bi-globe"></i></a>
                 </div>
             </section>
         </div>
-    {% endfor %}
 </main>
 
 {% include 'footer.html' %}

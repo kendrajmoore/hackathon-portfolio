@@ -25,18 +25,24 @@ def index():
 
 
 
-@app.route('/project')
-def get_project():
+@app.route('/project/<name>')
+def get_project(name):
     project_file = os.path.join(app.static_folder, 'data', 'project.json')
-    projects = read_file(project_file)  
-    return render_template('project.html', projects=projects, url=os.getenv("URL"))
+    projects = read_file(project_file)       
+    for project in projects:
+        if project['name'] == name:
+            item = project
+    return render_template('project.html', projects=projects, item=item, url=os.getenv("URL"))
 
 
-@app.route('/profile')
-def get_profile():
+@app.route('/profile/<name>')
+def get_profile(name):
     profile_file = os.path.join(app.static_folder, 'data', 'profile.json')
     profiles = read_file(profile_file)
-    return render_template('profile.html', profiles=profiles, title='Profile', url=os.getenv("URL"))
+    for profile in profiles:
+        if profile['name'] == name:
+            item = profile
+    return render_template('profile.html', profiles=profiles, item=item, title='Profile', url=os.getenv("URL"))
 
   
 @app.errorhandler(404)
