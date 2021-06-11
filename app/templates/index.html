@@ -21,36 +21,19 @@
     <h2>Introducing the team members</h2>
 
     <div class="grid-container members-container">
+        {% for profile in profiles %}
 
-        <figure class="card person-card">
-            <img src="./static/img/friends.jpg" alt="Kenargi Member" class="card-img-top">
-            <figcaption class="card-body">
-                <a href="/profile" class="stretched-link">
-                    <h5 class="card-title">Armando</h5>
-                </a>
-                    <p class="card-text">Mexico City, Mexico</p>
-                </figcaption>
-            </figure>
-
+        <div class="grid-container members-container">
             <figure class="card person-card">
-                <img src="./static/img/friends.jpg" alt="Kenargi Member" class="card-img-top">
+                <img src="{{ profile.image }}" alt="Kenargi Member" class="card-img-top">
                 <figcaption class="card-body">
                     <a href="/profile" class="stretched-link">
-                        <h5 class="card-title">Gigi</h5>
+                        <h5 class="card-title">{{ profile.name }}</h5>
                     </a>
-                    <p class="card-text">Los Angeles, California</p>
+                    <p class="card-text">{{ profile.location }} </p>
                 </figcaption>
             </figure>
-
-            <figure class="card person-card">
-                <img src="./static/img/friends.jpg" alt="Kenargi Member" class="card-img-top">
-                <figcaption class="card-body">
-                    <a href="/profile" class="stretched-link">
-                        <h5 class="card-title">Kendra</h5>
-                    </a>
-                    <p class="card-text">City, State</p>
-                </figcaption>
-            </figure>
+        {% endfor %}
     </div>
 </section>
 
@@ -59,16 +42,18 @@
     <h2>Projects</h2>
 
     <div class="grid-container projects-container">
+        {% for project in projects %}
         <figure class="card person-card">
-            <img src="./static/img/project1.png" alt="Kenargi Project" class="card-img-top">
+            <img src="{{ project.image }}" alt="Kenargi Project" class="card-img-top">
             <figcaption class="card-body">
-                <a href="/project" class="stretched-link">
-                    <h5 class="card-title">Portfolio</h5>
+                <a href="{{ project.link }}" class="stretched-link">
+                    <h5 class="card-title">{{ project.name }}</h5>
                 </a>
-                <p class="card-text">Our first project</p>
-                </figcaption>
-            </figure>
-        </div>
+                <p class="card-text">{{ project.description }}</p>
+            </figcaption>
+        </figure>
+        {% endfor %}
+    </div>
 
     </section>
 

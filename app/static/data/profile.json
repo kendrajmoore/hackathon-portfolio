@@ -1,7 +1,10 @@
+
 {
     "lists" : [
        {
            "name": "me",
+           "id": 1,
+           "location": "Mexico city",
            "image": "./static/img/logo.jpg",
            "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, consequuntur cum deleniti",
            "tools": ["React", "python", "math"],
@@ -11,6 +14,8 @@
        },
        {
         "name": "me",
+        "id": 2,
+        "location": "Miami",
         "image": "./static/img/logo.jpg",
         "aboutMe": "Beautiful day in Portland!",
         "tools": ["React", "python", "math"],
@@ -20,6 +25,8 @@
     },
     {
         "name": "me",
+        "id": 3,
+        "location": "somewhere",
         "image": "./static/img/logo.jpg",
         "aboutMe": "Beautiful day in Portland!",
         "tools": ["React", "python", "math"],
