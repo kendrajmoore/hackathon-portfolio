@@ -16,7 +16,11 @@ def index():
     img_1 = './static/img/friends.jpg'
     img_2 = "./static/img/Gigi_Hui.png"
     img_3 = "./static/img/friends.jpg"
-    return render_template('index.html', title="Team Kenargi's portfolio", url=os.getenv("URL"),
+    project_file = os.path.join(app.static_folder, 'data', 'project.json')
+    projects = read_file(project_file) 
+    profile_file = os.path.join(app.static_folder, 'data', 'profile.json')
+    profiles = read_file(profile_file)
+    return render_template('index.html', profiles=profiles, projects=projects, title="Team Kenargi's portfolio", url=os.getenv("URL"),
     img_1=img_1, img_2=img_2, img_3=img_3)
 
 
