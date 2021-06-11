@@ -13,24 +13,6 @@
          ],
          "link": "www.google.com",
          "source": "https://github.com/kendrajmoore/hackathon-portfolio"
-       },
-       {
-           "name": "Sample Project",
-           "id": 2,
-           "image": "/static/img/logo.jpg",
-           "description": "Beautiful day in Georgia!",
-           "tools": ["C++", "R", "OCaml"],
-           "link": "www.github.com",
-           "source": "www.google.com"
-       },
-       {
-           "name": "MagicCardApp",
-           "id": 3,
-           "image": "/static/img/magic.png",
-           "description": "An app to display magic cards",
-           "tools": ["Rails", "Magic Card Api", "Bootstrap"],
-           "source": "https://github.com/kendrajmoore/magic_cards_app",
-           "link": "https://magic-cards-kjm.herokuapp.com/"
        }
    ]
 }
