@@ -4,12 +4,9 @@
 
 # Team KENARGI Portfolio Design 
 
-Design and maintain a portfolio website for our time @MLH Fellowship Production Engineering track
-
 ## Project Overview
 
-Create a portfolio that is personalized to us. By creating a portfolio we can store the numberous projects we will be working on 
-in the next 12-weeks and help us keep track of what we had accomplished. 
+Design and maintain a portfolio website for our open-source projects.
 
 ## Technologies Used
 
