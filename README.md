@@ -2,16 +2,21 @@
  <img width="460" src="https://user-images.githubusercontent.com/51943194/121562739-98dd0680-c9ce-11eb-897a-579780e50c9a.jpg">
 </p>
 
-# Team KENARGI Portfolio design 
+# Team KENARGI Portfolio Design 
 
 Design and maintain a portfolio website for our time @MLH Fellowship Production Engineering track
+
+## Project Overview
+
+This project is to create a portfolio that is personalized to us using basic Flask, Python, HTML and CSS. By creating a portfolio
+we can store the numberous projects we will be working on in the next 12-weeks and help us keep track of what we had accomplished. 
 
 ## Technologies Used
 
 - Python-Flask
 - HTML
 - CSS
- 
+- JSON
 
 ## Installation
 
