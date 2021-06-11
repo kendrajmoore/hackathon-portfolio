@@ -1,21 +1,20 @@
-
 {% include 'header.html' %}
 
-
-    <main>
-        {% for profile in profiles %}
-        <section class="profile">
+<main>
+    {% for profile in profiles %}
+        <div class="profile">
             <div id="profile-picture" class="profile-picture">
-                <img src="{{ profile.image }}">
-                <h1>{{ title }}</h1>
+                <img src="{{ profile.image }}" alt="{{ profile.name }}">
             </div>
-        </section>
+            <h1>{{ title }}</h1>
+        </div>
 
-        <div class="container">
+        <div class="container profile-info">
             <section>
                 <h3>About me</h3>
                 <p>{{ profile.aboutMe }}</p>
             </section>
+            <hr>
             <section>
                 <h3>Tools and technologies</h3>
                 <ul>
@@ -24,14 +23,16 @@
                     {% endfor %}
                 </ul>
             </section>
+            <hr>
             <section>
                 <h3>Hobbies</h3>
                 <ul>
                     {% for hobby in profile.hobbies %}
                         <li> {{ hobby }}</li>
-                    {% endfor %}      
+                    {% endfor %}
                 </ul>
             </section>
+            <hr>
             <section>
                 <h3>Connect with me!</h3>
                 <ul>
