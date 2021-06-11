@@ -1,38 +1,66 @@
-
 {
-    "lists" : [
-       {
-           "name": "me",
-           "id": 1,
-           "location": "Mexico city",
-           "image": "./static/img/logo.jpg",
-           "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, consequuntur cum deleniti",
-           "tools": ["React", "python", "math"],
-           "hobbies": ["Programming", "running", "painting"],
-           "github": "www.github.com",
-           "linkedin": "www.linkedin.com"
-       },
-       {
-        "name": "me",
-        "id": 2,
-        "location": "Miami",
-        "image": "./static/img/logo.jpg",
-        "aboutMe": "Beautiful day in Portland!",
-        "tools": ["React", "python", "math"],
-        "hobbies": ["movies", "dancing", "farming"],
-        "github": "www.github.com",
-        "linkedin": "www.linkedin.com"
+  "lists": [
+    {
+      "name": "Armando Ugalde",
+      "id": 1,
+      "location": "Mexico city",
+      "image": "./static/img/armando.jpg",
+      "aboutMe": "I'm a Computer Engineering student passionate about Software Engineering. I like to use my technical skills to solve real-world problems and impact other people's lives.",
+      "tools": [
+        "Java",
+        "C",
+        "Python",
+        "JavaScript/TypeScript",
+        "React",
+        "Node",
+        "HTML/CSS"
+      ],
+      "hobbies": [
+        "Programming",
+        "Soccer",
+        "Gym",
+        "Playing guitar"
+      ],
+      "github": "https://github.com/armandouv",
+      "linkedin": "https://www.linkedin.com/in/armandouv/"
     },
     {
-        "name": "me",
-        "id": 3,
-        "location": "somewhere",
-        "image": "./static/img/logo.jpg",
-        "aboutMe": "Beautiful day in Portland!",
-        "tools": ["React", "python", "math"],
-        "hobbies": ["movies", "dancing", "farming"],
-        "github": "www.github.com",
-        "linkedin": "www.linkedin.com"
+      "name": "me",
+      "id": 2,
+      "location": "Miami",
+      "image": "./static/img/logo.jpg",
+      "aboutMe": "Beautiful day in Portland!",
+      "tools": [
+        "React",
+        "python",
+        "math"
+      ],
+      "hobbies": [
+        "movies",
+        "dancing",
+        "farming"
+      ],
+      "github": "www.github.com",
+      "linkedin": "www.linkedin.com"
+    },
+    {
+      "name": "me",
+      "id": 3,
+      "location": "somewhere",
+      "image": "./static/img/logo.jpg",
+      "aboutMe": "Beautiful day in Portland!",
+      "tools": [
+        "React",
+        "python",
+        "math"
+      ],
+      "hobbies": [
+        "movies",
+        "dancing",
+        "farming"
+      ],
+      "github": "www.github.com",
+      "linkedin": "www.linkedin.com"
     }
-   ]
+  ]
 }
