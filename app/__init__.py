@@ -35,6 +35,7 @@ def get_project(name):
 @app.route('/profile/<name>')
 def get_profile(name):
     item = prof_data(name)
+    print(item)
     return render_template('profile.html', item=item, title='Profile', url=os.getenv("URL"))
 
   

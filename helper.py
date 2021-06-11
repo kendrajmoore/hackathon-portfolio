@@ -30,5 +30,5 @@ def prof_data(name):
     profiles = prof_json()
     for profile in profiles:
         if profile['name'] == name:
-            item = profiles
+            item = profile
     return item
