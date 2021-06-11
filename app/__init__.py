@@ -22,14 +22,14 @@ def index():
 @app.route('/projects/<name>')
 def get_project(name):
     item = proj_data(name)
-    return render_template('project.html', item=item, title=name, url=url)
+    return render_template('project.html', item=item, title=name, url=url + "/projects/" + name)
 
 
 @app.route('/profiles/<name>')
 def get_profile(name):
     item = prof_data(name)
     title = name + "'s Profile"
-    return render_template('profile.html', item=item, title=title, url=url)
+    return render_template('profile.html', item=item, title=title, url=url + "/profiles/" + name)
 
 
 @app.errorhandler(404)
