@@ -4,7 +4,7 @@
 
 # Team KENARGI Portfolio Design 
 
-## Project Overview
+## Description
 
 Design and maintain a portfolio website for our open-source projects.
 
