@@ -43,6 +43,7 @@ Create a .env file using the example.env template
 Start flask development server
 ```bash
 $ export FLASK_ENV=development
+$ export URL=localhost:5000 
 $ flask run
 ```
 ## Contributing
