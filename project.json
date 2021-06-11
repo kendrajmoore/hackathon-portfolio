@@ -1,32 +1,44 @@
 {
     "lists" : [
        {
-           "name": "projectcandy",
-           "id": 1,
-           "image": "./static/img/logo.jpg",
-           "description": "Beautiful day in Portland!",
-           "tools": ["React", "python", "math"],
-           "link": "www.google.com",
-           "source": "www.github.com"
+         "name": "projectcandy",
+         "id": 1,
+         "image": "/static/img/logo.jpg",
+         "description": "Beautiful day in Portland!",
+         "tools": [
+           "React",
+           "python",
+           "math"
+         ],
+         "link": "www.google.com",
+         "source": "www.github.com"
        },
-       {
-           "name": "projecttwo",
-           "id": 2,
-           "image": "./static/img/logo.jpg",
-           "description": "Beautiful day in Georgia!",
-           "tools": ["C++", "R", "OCaml"],
-           "link": "www.github.com",
-           "source": "www.google.com"
-       },
-       {
-           "name": "projecttwo",
-           "id": 3,
-           "image": "./static/img/logo.jpg",
-           "description": "Beautiful day in Georgia!",
-           "tools": ["C++", "R", "OCaml"],
-           "link": "www.github.com",
-           "source": "www.google.com"
-       }
+      {
+        "name": "projecttwo",
+        "id": 2,
+        "image": "/static/img/logo.jpg",
+        "description": "Beautiful day in Georgia!",
+        "tools": [
+          "C++",
+          "R",
+          "OCaml"
+        ],
+        "link": "www.github.com",
+        "source": "www.google.com"
+      },
+      {
+        "name": "projecttwo",
+        "id": 3,
+        "image": "/static/img/logo.jpg",
+        "description": "Beautiful day in Georgia!",
+        "tools": [
+          "C++",
+          "R",
+          "OCaml"
+        ],
+        "link": "www.github.com",
+        "source": "www.google.com"
+      }
    ]
 }
 
