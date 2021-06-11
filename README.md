@@ -1,3 +1,5 @@
+<src="https://img.shields.io/github/license/kendrajmoore/hackathon-portfolio">
+
 <p align="center">
  <img width="460" src="https://user-images.githubusercontent.com/51943194/121562739-98dd0680-c9ce-11eb-897a-579780e50c9a.jpg">
 </p>
