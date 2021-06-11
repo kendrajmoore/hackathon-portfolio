@@ -19,13 +19,13 @@
            "source": "www.google.com"
        },
        {
-           "name": "projecttwo",
+           "name": "MagicCardApp",
            "id": 3,
-           "image": "./static/img/logo.jpg",
-           "description": "Beautiful day in Georgia!",
-           "tools": ["C++", "R", "OCaml"],
-           "link": "www.github.com",
-           "source": "www.google.com"
+           "image": "./static/img/magic.png",
+           "description": "An app to display magic cards",
+           "tools": ["Rails", "Magic Card Api", "Bootstrap"],
+           "link": "https://github.com/kendrajmoore/magic_cards_app",
+           "source": "https://magic-cards-kjm.herokuapp.com/"
        }
    ]
 }

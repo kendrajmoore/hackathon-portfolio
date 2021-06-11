@@ -10,7 +10,6 @@ app = Flask(__name__)
 
 
 @app.route('/')
-@app.route('/index')
 def index():
 
     img_1 = './static/img/friends.jpg'
@@ -26,22 +25,21 @@ def index():
 
 
 
-@app.route('/project/<name>')
+@app.route('/projects/<name>')
 def get_project(name):
     item = proj_data(name)
     return render_template('project.html',  item=item, url=os.getenv("URL"))
 
 
-@app.route('/profile/<name>')
+@app.route('/profiles/<name>')
 def get_profile(name):
     item = prof_data(name)
-    print(item)
     return render_template('profile.html', item=item, title='Profile', url=os.getenv("URL"))
 
   
 @app.errorhandler(404)
 def page_not_found(e):
-    source_img="./static/img/404.png"
+    source_img="/static/img/404.png"
     return render_template('404.html', img=source_img, title="Page not found"), 404
     
 
