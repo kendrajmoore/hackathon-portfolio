@@ -4,6 +4,7 @@
 </p>
 
 # Team KENARGI Portfolio Webpage
+by Armando, Gigi, Kendra, Pod 3.3.5
 
 ## Introduction
 
