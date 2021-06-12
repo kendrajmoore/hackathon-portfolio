@@ -5,9 +5,13 @@
 
 # Team KENARGI Portfolio Webpage
 
-## Description
+## Introduction
 
 Design and maintain a portfolio website for our open-source projects.
+
+## Description
+
+Working as a team, we created a website to track our projects and accomplishments. 
 
 ## Technologies Used
 
