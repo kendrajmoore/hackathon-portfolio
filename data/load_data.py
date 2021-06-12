@@ -1,14 +1,14 @@
 import json
 
 
-def read_file(file):
-    with open(file) as p:
+def load_items_from_file(path: str) -> list:
+    with open(path) as p:
         data = json.load(p)
         return data["items"]
 
 
-def load_items(filename):
-    items = read_file(filename)
+def load_items_as_dict(path: str) -> dict:
+    items = load_items_from_file(path)
     items_dict = {}
     for item in items:
         name = item["name"]
@@ -17,8 +17,8 @@ def load_items(filename):
 
 
 def load_projects() -> dict:
-    return load_items('./project.json')
+    return load_items_as_dict('data/projects.json')
 
 
 def load_profiles() -> dict:
-    return load_items('./profile.json')
+    return load_items_as_dict('data/profiles.json')
