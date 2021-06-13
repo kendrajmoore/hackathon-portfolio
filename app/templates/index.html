@@ -1,15 +1,18 @@
 {% include 'header.html' %}
-<img src="/static/img/background.jpg">
+<section class=section-index>
+<div class="text">
+    <h1 style="font-size:50px">[  Welcome Message  ]</h1>
+</div>
+</section>
+
+
 <div class="nav-content profile">
     <h1></h1>
-
-    <div class="nav-content profile">
-        <h2 class="h2-line">My Portfolio</h2>
-    </div>
+    <h2 class="h2-line">My Portfolio</h2>
 </div>
 
-
 <section class="cimg">
+   
     
         {% for profile in profiles.values() %}
             <figure class="card person-card">
@@ -46,6 +49,7 @@
         {% endfor %}
     </div>
 </section>
+
 
 
 {% include 'footer.html' %}

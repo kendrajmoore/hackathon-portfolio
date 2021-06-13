@@ -22,6 +22,7 @@ body {
     font-family: "Roboto", serif;
     font-weight: 700 !important;
     padding: 1.3em 3em;
+    overflow: auto;
 }
 
 .nav-content .logo-touch-target {
